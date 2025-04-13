@@ -53,6 +53,7 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  position: fixed;
 }
 
 .login-btn:hover {
@@ -179,7 +180,7 @@
 }
 @media (max-width: 767px) {
   .login-btn{
-    top: 50px;
+    top: 20px;
     height: 70px;  
     width: 100px;  
     right: 90px;
@@ -188,7 +189,7 @@
 /* Adjustments for Mobile */
 @media (max-width: 750px) {
   .login-btn{
-    top: 55px;
+    top: 20px;
     height: 60px;    
     right: 90px;
   }
@@ -203,7 +204,7 @@
 }
 @media (max-width: 719px) {
   .login-btn{
-    top: 60px;
+    top: 20px;
     height: 60px;    
     right: 70px;
   }
@@ -220,7 +221,7 @@
 }
 @media (max-width: 649px){
   .login-btn{
-    top: 60px;
+    top: 20px;
     height: 50px;    
     right: 40px;
   }
@@ -229,7 +230,7 @@
 /* 📱 Responsive Design */
 @media screen and (max-width: 600px) {
   .login-btn {
-      top: 65px;
+      top: 25px;
       right: 60px;
       padding: 8px 15px;
       font-size: 14px;
@@ -245,7 +246,7 @@
 }
 @media (max-width: 549px){
   .login-btn{
-    top: 65px;
+    top: 25px;
     height: 50px;    
     right: 65px;
   }
@@ -262,9 +263,9 @@
 
 @media (max-width: 539px){
   .login-btn{
-    top: 80px;
+    top: 35px;
     height: 50px;    
-    right: 45px;
+    right: 55px;
   }
 
   
@@ -272,7 +273,7 @@
 /* Adjustments for Mobile */
 @media (max-width: 480px) {
   .login-btn{
-    top: 45px;
+    top: 15px;
     height: 50px;    
     right: 45px;
   }
@@ -284,7 +285,7 @@
 @media (max-width: 430px){
   
   .login-btn{
-    top: 105px;
+    top: 30px;
     height: 50px;    
     right: 42px;
   }
@@ -310,7 +311,7 @@
 @media (max-width: 414px){
   
   .login-btn{
-    top: 90px;
+    top: 30px;
     height: 50px;    
     right: 35px;
   }
@@ -318,7 +319,7 @@
 @media (max-width: 412px){
   
   .login-btn{
-    top: 100px;
+    top: 30px;
     height: 50px;    
     right: 35px;
   }
@@ -326,7 +327,7 @@
 @media (max-width: 410px){
   
   .login-btn{
-    top: 60px;
+    top: 30px;
     height: 50px;    
     right: 35px;
   }
@@ -334,15 +335,15 @@
 
 @media (max-width: 376px){
   .login-btn{
-    top: 0px;
+    top: 30px;
     height: 50px; 
-    right: 5px; 
+    right: 25px; 
     width: 80px;  
   }
 }
 @media (max-width: 374px){
   .login-btn{
-    top: 95px;
+    top: 30px;
     height: 50px; 
     right: 30px; 
     width: 80px;  
@@ -357,7 +358,7 @@
 }
 @media (max-width: 359px){
   .login-btn{
-    top: 90px;
+    top: 35px;
     height: 50px;    
     right: 35px;
   }
@@ -373,7 +374,7 @@
 @media (max-width: 343px){
   
   .login-btn{
-    top: 20px;
+    top: 35px;
     height: 50px;    
     right: 25px;
   }
