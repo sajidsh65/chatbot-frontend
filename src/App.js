@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Chatbot from "./Chatbot";
+import Login from "./login";
+import Register from "./register";
+import "./App.css";
+
+function Home({ isLoggedIn, handleLogout }) {
+    const navigate = useNavigate();
+
+    return (
+        <div className="App">
+            {!isLoggedIn ? (
+                <button onClick={() => navigate("/login")} className="login-btn">
+                    Login
+                </button>
+            ) : (
+                <button onClick={handleLogout} className="login-btn">
+                    Logout
+                </button>
+            )}
+            <Chatbot isLoggedIn={isLoggedIn} />
+        </div>
+    );
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("token"));
+
+    const handleLogin = () => {
+        setIsLoggedIn(true);
+    };
+
+    const handleLogout = () => {
+        localStorage.removeItem("token");
+        setIsLoggedIn(false);
+    };
+
+    return (
+        <Routes>
+            <Route path="/" element={<Home isLoggedIn={isLoggedIn} handleLogout={handleLogout} />} />
+            <Route path="/login" element={<Login onLogin={handleLogin} />} />
+            <Route path="/register" element={<Register />} />
+        </Routes>
+    );
 }
 
 export default App;

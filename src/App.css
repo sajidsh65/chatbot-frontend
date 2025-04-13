@@ -1,5 +1,10 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
 }
 
 .App-logo {
@@ -36,3 +41,344 @@
     transform: rotate(360deg);
   }
 }
+
+.login-btn {
+  position: fixed; /* Top-right corner fix karne ke liye */
+  top: 50px;
+  right: 50px;
+  background-color: #007bff; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: black; /* Hover effect */
+}
+
+
+/* Adjustments for desktop */
+@media (max-width: 1220px) {
+  
+  .login-btn{
+    /* top: 110px; */
+    height: 70px;  
+    width: 100px;  
+    /* right: 110px; */
+    font-size: 20px;
+    /* font-weight: bold; */
+    /* border-radius: 20%; */
+  }
+}
+
+@media (max-width: 1130px){
+  .login-btn{
+    top: 15px;
+    
+    right: 50px;
+    font-size: 20px;
+    
+  }
+}
+@media (max-width: 1024px){
+  .login-btn{
+    top: 275px;
+    
+    right: 120px;
+    font-size: 20px;
+    
+  }
+}
+@media (max-width: 1023px){
+  .login-btn{
+    top: 30px;
+    
+    right: 120px;
+    font-size: 20px;
+    
+  }
+}
+@media (max-width: 947px){
+  .login-btn{
+    top: 20px;
+    
+    right: 30px;
+    font-size: 20px;
+    
+  }
+}
+@media (max-width: 912px){
+  .login-btn{
+    top: 270px;
+    
+    right: 140px;
+    font-size: 20px;
+    
+  }
+  
+}
+@media (max-width: 911px){
+  .login-btn{
+    top: 30px;
+    
+    right: 140px;
+    font-size: 20px;
+    
+  }
+  
+}
+@media (max-width: 853px) {
+  .login-btn{
+    top: 140px;
+    height: 70px;  
+    width: 100px;  
+    right: 110px;
+  }
+  
+}
+@media (max-width: 852px) {
+  .login-btn{
+    top: 30px;
+    height: 70px;  
+    width: 100px;  
+    right: 110px;
+  }
+  
+}
+@media (max-width: 820px){
+  .login-btn{
+    top: 140px;
+    height: 70px;  
+    width: 100px;  
+    right: 110px;
+  }
+}
+@media (max-width: 819px){
+  
+  .login-btn{
+    top: 7px;
+    height: 70px;  
+    width: 100px;  
+    right: 110px;
+  }
+  
+}
+
+
+/* Adjustments for Mobile */
+@media (max-width: 768px) {
+  .login-btn{
+    top: 135px;
+    height: 70px;  
+    width: 100px;  
+    right: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .login-btn{
+    top: 50px;
+    height: 70px;  
+    width: 100px;  
+    right: 90px;
+  }
+}
+/* Adjustments for Mobile */
+@media (max-width: 750px) {
+  .login-btn{
+    top: 55px;
+    height: 60px;    
+    right: 90px;
+  }
+}
+/* Adjustments for Mobile */
+@media (max-width: 720px) {
+  .login-btn{
+    top: 10px;
+    height: 60px;    
+    right: 60px;
+  }
+}
+@media (max-width: 719px) {
+  .login-btn{
+    top: 60px;
+    height: 60px;    
+    right: 70px;
+  }
+}
+
+
+
+@media (max-width: 650px){
+  .login-btn{
+    top: 40px;
+    height: 50px;    
+    right: 40px;
+  }
+}
+@media (max-width: 649px){
+  .login-btn{
+    top: 60px;
+    height: 50px;    
+    right: 40px;
+  }
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 600px) {
+  .login-btn {
+      top: 65px;
+      right: 60px;
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 550px){
+  .login-btn{
+    top: 15px;
+    height: 50px;    
+    right: 15px;
+  }
+}
+@media (max-width: 549px){
+  .login-btn{
+    top: 65px;
+    height: 50px;    
+    right: 65px;
+  }
+}
+@media (max-width: 540px){
+  .login-btn{
+    top: 25px;
+    height: 50px;    
+    right: 45px;
+  }
+  
+  
+}
+
+@media (max-width: 539px){
+  .login-btn{
+    top: 80px;
+    height: 50px;    
+    right: 45px;
+  }
+
+  
+}
+/* Adjustments for Mobile */
+@media (max-width: 480px) {
+  .login-btn{
+    top: 45px;
+    height: 50px;    
+    right: 45px;
+  }
+  
+}
+@media (max-width: 440px){
+  
+}
+@media (max-width: 430px){
+  
+  .login-btn{
+    top: 105px;
+    height: 50px;    
+    right: 42px;
+  }
+  
+}
+@media (max-width: 423px){
+  
+  
+  
+}
+@media (max-width: 420px){
+  .login-btn{
+    top: 30px;
+    height: 50px;    
+    right: 35px;
+  }
+  
+}
+
+
+
+
+@media (max-width: 414px){
+  
+  .login-btn{
+    top: 90px;
+    height: 50px;    
+    right: 35px;
+  }
+}
+@media (max-width: 412px){
+  
+  .login-btn{
+    top: 100px;
+    height: 50px;    
+    right: 35px;
+  }
+}
+@media (max-width: 410px){
+  
+  .login-btn{
+    top: 60px;
+    height: 50px;    
+    right: 35px;
+  }
+}
+
+@media (max-width: 376px){
+  .login-btn{
+    top: 0px;
+    height: 50px; 
+    right: 5px; 
+    width: 80px;  
+  }
+}
+@media (max-width: 374px){
+  .login-btn{
+    top: 95px;
+    height: 50px; 
+    right: 30px; 
+    width: 80px;  
+  }
+}
+@media (max-width: 360px){
+  .login-btn{
+    top: 35px;
+    height: 50px;    
+    right: 35px;
+  }
+}
+@media (max-width: 359px){
+  .login-btn{
+    top: 90px;
+    height: 50px;    
+    right: 35px;
+  }
+}
+@media (max-width: 344px){
+  
+  .login-btn{
+    top: 35px;
+    height: 50px;    
+    right: 25px;
+  }
+}
+@media (max-width: 343px){
+  
+  .login-btn{
+    top: 20px;
+    height: 50px;    
+    right: 25px;
+  }
+}
+
+
+
+
