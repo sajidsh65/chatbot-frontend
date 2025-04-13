@@ -560,7 +560,8 @@ body {
 }
 
 
-/* @media (max-width: 650px){
+
+@media (max-width: 700px){
     .chat-container {
         width: 400px;
         height: 600px;       
@@ -568,8 +569,21 @@ body {
     .chat-body{
         flex-direction: column;
     }
+    .sidebar {
+        width: 300px;
+        height: 600px;
+        top: 125px;
+    }
+
+    .sidebar-toggle {
+        display: block;
+        top: 20px;
+        width: 80px;
+        height: 60px;
+        left: 60px;
+    }
     
-} */
+}
 
 /* Adjustments for Mobile */
 @media (max-width: 640px) {
