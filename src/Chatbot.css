@@ -539,12 +539,12 @@ body {
         height: 670px;
     }
 } */
-/* Adjustments for Mobile
+/* Adjustments for Mobile */
 @media (max-width: 720px) {
     .sidebar {
         width: 300px;
-        height: 700px;
-        top: 75px;
+        height: 600px;
+        top: 100px;
     }
 
     .sidebar-toggle {
@@ -555,10 +555,9 @@ body {
         left: 60px;
     }
     .chat-container{
-        height: 700px;
+        height: 600px;
     }
-} */
-
+}
 
 
 /* @media (max-width: 650px){
