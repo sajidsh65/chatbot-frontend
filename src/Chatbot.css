@@ -1015,6 +1015,9 @@ body {
     .new-chat-btn{
         width: 40%;
     }
+    .chat-container {
+        height: 600px;       
+    }
 }
 @media (max-width: 360px){
     .sidebar-toggle{
