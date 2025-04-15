@@ -8,6 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -1016,10 +1017,11 @@ body {
         width: 40%;
     }
     .chat-container {
-        height: 500px;       
+        height: 550px;       
     }
     .body{
-        height: 550px;
+        height: 100vh;
+        overflow: hidden;
     }
 }
 @media (max-width: 360px){
