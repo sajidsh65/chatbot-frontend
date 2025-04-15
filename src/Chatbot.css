@@ -1016,10 +1016,10 @@ body {
         width: 40%;
     }
     .chat-container {
-        height: 600px;       
+        height: 500px;       
     }
     .body{
-        height: 650px;
+        height: 550px;
     }
 }
 @media (max-width: 360px){
