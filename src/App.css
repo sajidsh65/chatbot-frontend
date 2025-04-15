@@ -142,34 +142,21 @@
   }
   
 }
-@media (max-width: 853px) {
-  .login-btn{
-    top: 10px;
-    height: 70px;  
-    width: 100px;  
-    right: 10px;
-  }
-  
-}
 @media (max-width: 852px) {
   .login-btn{
-    /* top: 30px; */
-    top: 10px;
+    top: 30px;
     height: 70px;  
     width: 100px;  
-    /* right: 110px; */
-    right: 10px;
+    right: 110px;
   }
   
 }
 @media (max-width: 820px){
   .login-btn{
-    /* top: 140px; */
-    top: 10px;
+    top: 140px;
     height: 70px;  
     width: 100px;  
-    /* right: 110px; */
-    right: 10px;
+    right: 110px;
   }
 }
 @media (max-width: 819px){
@@ -178,7 +165,6 @@
     top: 7px;
     height: 70px;  
     width: 100px;  
-    right: 10px;
     right: 110px;
   }
   
@@ -194,34 +180,20 @@
     right: 90px;
   }
 }
-@media (max-width: 768px) {
-  .login-btn{
-    /* top: 135px; */
-    top: 15px;
-    height: 70px;  
-    width: 100px;  
-    right: 90px;
-    right: 20px;
-  }
-}
 @media (max-width: 767px) {
   .login-btn{
-    /* top: 20px; */
-    top: 10px;
+    top: 20px;
     height: 70px;  
     width: 100px;  
     right: 90px;
-    right: 10px;
   }
 }
 /* Adjustments for Mobile */
 @media (max-width: 750px) {
   .login-btn{
-    /* top: 20px; */
-    top: 10px;
+    top: 20px;
     height: 60px;    
-    /* right: 90px; */
-    right: 10px;
+    right: 90px;
   }
 }
 /* Adjustments for Mobile */
@@ -229,16 +201,14 @@
   .login-btn{
     top: 10px;
     height: 60px;    
-    /* right: 60px; */
-    right: 20px;
+    right: 60px;
   }
 }
 @media (max-width: 719px) {
   .login-btn{
     top: 20px;
     height: 60px;    
-    /* right: 70px; */
-    right: 20px;
+    right: 70px;
   }
 }
 
@@ -246,30 +216,24 @@
 
 @media (max-width: 650px){
   .login-btn{
-    /* top: 40px; */
-    top: 10px;
+    top: 40px;
     height: 50px;    
-    /* right: 40px; */
-    right: 10px;
+    right: 40px;
   }
 }
 @media (max-width: 649px){
   .login-btn{
-    /* top: 20px; */
-    top: 10px;
+    top: 20px;
     height: 50px;    
-    /* right: 40px; */
-    right: 10px;
+    right: 40px;
   }
 }
 
 /* 📱 Responsive Design */
 @media screen and (max-width: 600px) {
   .login-btn {
-      /* top: 25px; */
-      top: 10px;
-      /* right: 60px; */
-      right: 10px;
+      top: 25px;
+      right: 60px;
       padding: 8px 15px;
       font-size: 14px;
   }
@@ -284,20 +248,16 @@
 }
 @media (max-width: 549px){
   .login-btn{
-    /* top: 25px; */
-    top: 15px;
+    top: 25px;
     height: 50px;    
-    /* right: 65px; */
-    right: 15px;
+    right: 65px;
   }
 }
 @media (max-width: 540px){
   .login-btn{
-    /* top: 25px; */
-    top: 15px;
+    top: 25px;
     height: 50px;    
-    /* right: 45px; */
-    right: 15px;
+    right: 45px;
   }
   
   
@@ -305,11 +265,9 @@
 
 @media (max-width: 539px){
   .login-btn{
-    /* top: 35px; */
-    top: 15px;
+    top: 35px;
     height: 50px;    
-    /* right: 55px; */
-    right: 15px;
+    right: 55px;
   }
 
   
@@ -319,8 +277,7 @@
   .login-btn{
     top: 15px;
     height: 50px;    
-    /* right: 45px; */
-    right: 15px;
+    right: 45px;
   }
   
 }
@@ -343,11 +300,9 @@
 }
 @media (max-width: 420px){
   .login-btn{
-    /* top: 30px; */
-    top: 10px;
+    top: 30px;
     height: 50px;    
-    /* right: 35px; */
-    right: 15px;
+    right: 35px;
   }
   
 }
@@ -358,31 +313,25 @@
 @media (max-width: 414px){
   
   .login-btn{
-    /* top: 30px; */
-    top: 10px;
+    top: 30px;
     height: 50px;    
-    /* right: 35px; */
-    right: 15px;
+    right: 35px;
   }
 }
 @media (max-width: 412px){
   
   .login-btn{
-    /* top: 30px; */
-    top: 10px;
+    top: 30px;
     height: 50px;    
-    /* right: 35px; */
-    right: 15px;
+    right: 35px;
   }
 }
 @media (max-width: 410px){
   
   .login-btn{
-    /* top: 30px; */
-    top: 10px;
+    top: 30px;
     height: 50px;    
-    /* right: 35px; */
-    right: 15px;
+    right: 35px;
   }
 }
 
