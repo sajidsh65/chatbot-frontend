@@ -405,6 +405,9 @@ body {
         width: 20%;
         height: 50px;
     }
+    body{
+        height: 1200px;
+    }
 }
 @media (max-width: 820px){
     .sidebar-toggle {
