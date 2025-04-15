@@ -21,6 +21,8 @@ const Chatbot = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("token"));
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [selectedSessionId, setSelectedSessionId] = useState(null);
+  const sidebarRef = useRef(null);
+  const toggleBtnRef = useRef(null);
 
   const chatBoxRef = useRef(null);
   const navigate = useNavigate();
@@ -51,7 +53,26 @@ const Chatbot = () => {
         }
     }, [sessionId, isLoggedIn]);
 
+  // Close sidebar if click happens outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        sidebarOpen &&
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target) &&
+        toggleBtnRef.current &&
+        !toggleBtnRef.current.contains(event.target)
+      ) {
+        setSidebarOpen(false);
+      }
+    };
 
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [sidebarOpen]);
   
 
     function generateSessionId() {
@@ -341,7 +362,7 @@ const loadChat = (sessionId) => {
 
       <div className="button-group">
         {isLoggedIn && (
-          <button className="sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}  tabIndex="0"
+          <button className="sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}  tabIndex="0" ref={toggleBtnRef}
           onKeyDown={(e) => e.key === "Enter" && setSidebarOpen(!sidebarOpen)}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3 6H21M3 12H21M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -353,7 +374,7 @@ const loadChat = (sessionId) => {
       </div>
 
       {isLoggedIn && (
-        <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+        <div className={`sidebar ${sidebarOpen ? "open" : ""}`}  ref={sidebarRef}>
           
           <h2>Chat History</h2>
           <ul>
