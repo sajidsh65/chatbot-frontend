@@ -211,6 +211,14 @@
     right: 70px;
   }
 }
+@media (max-width: 700px) {
+  .login-btn{
+    top: 20px;
+    height: 60px;    
+    right: 70px;
+    width: 100px;
+  }
+}
 
 
 
