@@ -240,7 +240,7 @@
 /* 📱 Responsive Design */
 @media screen and (max-width: 600px) {
   .login-btn {
-      top: 25px;
+      top: 15px;
       right: 60px;
       padding: 8px 15px;
       font-size: 14px;
