@@ -610,6 +610,11 @@ body {
         height: 650px;
         width: 520px;
     }
+    .new-chat-btn{
+        width: 20%;
+        height: 50px;
+        top: 7px;
+    }
 }
 /* Adjustments for Mobile */
 @media (max-width: 576px) {
