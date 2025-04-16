@@ -594,7 +594,7 @@ body {
     .sidebar {
         width: 300px;
         height: 652px;
-        top: 103px;
+        top: 83px;
     }
 
     .sidebar-toggle {
@@ -602,7 +602,7 @@ body {
         top: 20px;
         width: 80px;
         height: 60px;
-        left: 60px;
+        left: 40px;
     }
     .chat-container{
         height: 650px;
