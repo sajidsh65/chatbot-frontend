@@ -748,7 +748,7 @@ body {
     .sidebar {
         width: 300px;
         height: 650px;
-        top: 78px;
+        top: 75px;
     }
 
     .sidebar-toggle {
@@ -769,7 +769,7 @@ body {
         height: 650px;       
     }
     .sidebar {
-        top: 76px;
+        top: 75px;
     }
     .input-box{
         justify-content: space-around;
@@ -798,7 +798,7 @@ body {
     }
     .sidebar{
         height: 650px; 
-        top: 76px;
+        top: 75px;
     }
     .sidebar h2{
         padding-top: 60px;
@@ -818,7 +818,7 @@ body {
         width: 70px;
     }
     .sidebar{
-        top: 76px;
+        top: 75px;
         height: 650px;
     }
 
@@ -831,13 +831,13 @@ body {
 @media (max-width: 429px){
     
     .sidebar-toggle{
-        top: 30px;
+        top: 10px;
         left: 40px; 
         height: 60px;
         width: 70px;
     }
     .sidebar{
-        top: 105px;
+        top: 75px;
         height: 650px;
     }
 
@@ -862,14 +862,14 @@ body {
 @media (max-width: 414px){
     
     .sidebar-toggle{
-        top: 30px;
+        top: 10px;
         left: 30px; 
         height: 60px;
         width: 70px;
     }
     .sidebar{
         height: 650px;
-        top: 105px;
+        top: 75px;
     }
     .sidebar h2{
         padding-top: 10px;
@@ -887,13 +887,13 @@ body {
 @media (max-width: 412px){
     
     .sidebar-toggle{
-        top: 30px;
+        top: 10px;
         left: 40px; 
         height: 60px;
         width: 70px;
     }
     .sidebar{
-        top: 162px;
+        top: 75px;
     }
     .new-chat-btn{
         width: 30%;
@@ -903,13 +903,13 @@ body {
 @media (max-width: 410px){
     
     .sidebar-toggle{
-        top: 30px;
+        top: 10px;
         left: 40px; 
         height: 60px;
         width: 70px;
     }
     .sidebar{
-        top: 105px;
+        top: 75px;
     }
     .new-chat-btn{
         width: 30%;
