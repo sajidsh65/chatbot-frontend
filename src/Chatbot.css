@@ -614,12 +614,12 @@ body {
     .sidebar {
         width: 300px;
         height: 652px;
-        top: 105px;
+        top: 74px;
     }
 
     .sidebar-toggle {
         display: block;
-        top: 20px;
+        top: 7px;
         width: 80px;
         height: 60px;
         left: 60px;
