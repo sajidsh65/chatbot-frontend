@@ -345,7 +345,7 @@
 
 @media (max-width: 376px){
   .login-btn{
-    top: 10px;
+    top: 30px;
     height: 50px; 
     right: 25px; 
     width: 80px;  
@@ -353,7 +353,7 @@
 }
 @media (max-width: 374px){
   .login-btn{
-    top: 10px;
+/*     top: 10px; */
     height: 50px; 
     right: 30px; 
     width: 80px;  
@@ -361,14 +361,14 @@
 }
 @media (max-width: 360px){
   .login-btn{
-    top: 15px;
+/*     top: 15px; */
     height: 50px;    
     right: 35px;
   }
 }
 @media (max-width: 359px){
   .login-btn{
-    top: 15px;
+/*     top: 15px; */
     height: 50px;    
     right: 35px;
   }
@@ -376,7 +376,7 @@
 @media (max-width: 344px){
   
   .login-btn{
-    top: 15px;
+/*     top: 15px; */
     height: 50px;    
     right: 25px;
   }
@@ -384,7 +384,7 @@
 @media (max-width: 343px){
   
   .login-btn{
-    top: 15px;
+/*     top: 15px; */
     height: 50px;    
     right: 25px;
   }
