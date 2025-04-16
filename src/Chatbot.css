@@ -985,11 +985,11 @@ body {
     .sidebar-toggle{
         height: 50px;
         width: 50px;
-        top: 10px;
+        top: 30px;
         left: 34px;
     }
     .sidebar{
-        top: 75px;
+        top: 105px;
         height: 600px;
         width: 250px;
     }
