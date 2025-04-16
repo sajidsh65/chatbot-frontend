@@ -930,13 +930,13 @@ body {
 @media (max-width: 391px){
     
     .sidebar-toggle{
-        top: 30px;
+        top: 10px;
         left: 30px; 
         height: 60px;
         width: 70px;
     }
     .sidebar{
-        top: 105px;
+        top: 75px;
     }
     .login-btn{
         top: 50px;
@@ -951,13 +951,13 @@ body {
 @media (max-width: 389px){
     
     .sidebar-toggle{
-        top: 30px;
+        top: 10px;
         left: 30px; 
         height: 60px;
         width: 70px;
     }
     .sidebar{
-        top: 105px;
+        top: 75px;
     }
     .login-btn{
         top: 50px;
@@ -985,11 +985,11 @@ body {
     .sidebar-toggle{
         height: 50px;
         width: 50px;
-        top: 30px;
+        top: 10px;
         left: 34px;
     }
     .sidebar{
-        top: 125px;
+        top: 75px;
         height: 600px;
         width: 250px;
     }
@@ -1007,13 +1007,13 @@ body {
 @media (max-width: 374px){
     .sidebar-toggle{
         
-        top: 30px;
+        top: 10px;
         left: 30px; 
         height: 50px;
         width: 60px;
     }
     .sidebar{
-        top: 125px;
+        top: 75px;
     }
 
     .new-chat-btn{
