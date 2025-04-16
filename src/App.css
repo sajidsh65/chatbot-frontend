@@ -211,7 +211,7 @@
     right: 70px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 698px) {
   .login-btn{
     top: 20px;
     height: 60px;    
