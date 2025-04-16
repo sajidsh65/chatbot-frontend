@@ -727,7 +727,7 @@ body {
 @media (max-width: 480px) {
     .sidebar {
         width: 300px;
-        height: 700px;
+        height: 650px;
         top: 70px;
     }
 
@@ -747,8 +747,8 @@ body {
 @media (max-width: 478px) {
     .sidebar {
         width: 300px;
-        height: 700px;
-        top: 70px;
+        height: 650px;
+        top: 78px;
     }
 
     .sidebar-toggle {
@@ -768,12 +768,15 @@ body {
         width: 350px;
         height: 650px;       
     }
+    .sidebar {
+        top: 78px;
+    }
     .input-box{
         justify-content: space-around;
         width: 95%;
     }
     .sidebar-toggle{
-        top: 20px;
+        top: 10px;
         left: 60px;
     }
     .sidebar h2{
@@ -790,12 +793,12 @@ body {
         width: 95%;
     }
     .sidebar-toggle{
-        top: 20px;
+        top: 10px;
         left: 60px;
     }
     .sidebar{
         height: 650px; 
-        top: 105px;
+        top: 78px;
     }
     .sidebar h2{
         padding-top: 60px;
