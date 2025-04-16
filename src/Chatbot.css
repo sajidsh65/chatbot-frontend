@@ -41,6 +41,7 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     padding-bottom: 20px;
+    padding-top: 75px
 }
 
 /* Chat Header */
@@ -483,7 +484,7 @@ body {
 @media (max-width: 768px) {
     .sidebar {
         width: 300px;
-        height: 650px;
+        height: 652px;
         top: 212px;
     }
 
@@ -506,7 +507,7 @@ body {
 @media (max-width: 767px) {
     .sidebar {
         width: 300px;
-        height: 650px;
+        height: 652px;
         top: 105px;
     }
 
@@ -548,7 +549,7 @@ body {
 @media (max-width: 720px) {
     .sidebar {
         width: 300px;
-        height: 600px;
+        height: 602px;
         top: 100px;
     }
 
@@ -576,7 +577,7 @@ body {
     }
     .sidebar {
         width: 300px;
-        height: 600px;
+        height: 602px;
         top: 125px;
     }
 
@@ -641,6 +642,11 @@ body {
         height: 50px;
         width: 60px;
     }
+    .sidebar {
+        width: 300px;
+        height: 602px;
+        top: 74px;
+    }
     .sidebar h2{
         padding-top: 60px;
     }
@@ -652,7 +658,7 @@ body {
 @media (max-width: 549px){
     .chat-container {
         width: 400px;
-        height: 652px;       
+        height: 650px;       
     }
     .sidebar-toggle{
         top: 15px;
@@ -704,7 +710,7 @@ body {
     }
     .sidebar{
         top: 96px;
-        height: 610px;
+        height: 608px;
     }
     .new-chat-btn{
         width: 30%;
@@ -728,7 +734,7 @@ body {
 @media (max-width: 480px) {
     .sidebar {
         width: 300px;
-        height: 650px;
+        height: 652px;
         top: 70px;
     }
 
@@ -748,7 +754,7 @@ body {
 @media (max-width: 478px) {
     .sidebar {
         width: 300px;
-        height: 650px;
+        height: 652px;
         top: 75px;
     }
 
@@ -798,7 +804,7 @@ body {
         left: 60px;
     }
     .sidebar{
-        height: 650px; 
+        height: 652px; 
         top: 75px;
     }
     .sidebar h2{
@@ -820,7 +826,7 @@ body {
     }
     .sidebar{
         top: 75px;
-        height: 650px;
+        height: 652px;
     }
 
     .new-chat-btn{
@@ -839,7 +845,7 @@ body {
     }
     .sidebar{
         top: 75px;
-        height: 650px;
+        height: 652px;
     }
 
     .new-chat-btn{
@@ -869,7 +875,7 @@ body {
         width: 70px;
     }
     .sidebar{
-        height: 650px;
+        height: 652px;
         top: 75px;
     }
     .sidebar h2{
@@ -991,7 +997,7 @@ body {
     }
     .sidebar{
         top: 91px;
-        height: 600px;
+        height: 602px;
         width: 250px;
     }
     .sidebar h2{
@@ -1085,7 +1091,7 @@ body {
     }
     .sidebar{
         top: 97x;
-        height: 600px;
+        height: 602px;
     }
     .new-chat-btn{
         width: 35%;
@@ -1103,7 +1109,7 @@ body {
     }
     .sidebar{
         top: 97px;
-        height: 600px;
+        height: 602px;
     }
     .new-chat-btn{
         width: 35%;
