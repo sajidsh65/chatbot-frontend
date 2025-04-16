@@ -769,7 +769,7 @@ body {
         height: 650px;       
     }
     .sidebar {
-        top: 78px;
+        top: 76px;
     }
     .input-box{
         justify-content: space-around;
@@ -798,7 +798,7 @@ body {
     }
     .sidebar{
         height: 650px; 
-        top: 78px;
+        top: 76px;
     }
     .sidebar h2{
         padding-top: 60px;
@@ -812,13 +812,13 @@ body {
 @media (max-width: 430px){
     
     .sidebar-toggle{
-        top: 30px;
+        top: 10px;
         left: 40px; 
         height: 60px;
         width: 70px;
     }
     .sidebar{
-        top: 105px;
+        top: 76px;
         height: 650px;
     }
 
