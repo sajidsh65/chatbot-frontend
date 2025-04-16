@@ -989,7 +989,7 @@ body {
         left: 34px;
     }
     .sidebar{
-        top: 105px;
+        top: 80px;
         height: 600px;
         width: 250px;
     }
@@ -1013,7 +1013,7 @@ body {
         width: 60px;
     }
     .sidebar{
-        top: 75px;
+        top: 80px;
     }
 
     .new-chat-btn{
