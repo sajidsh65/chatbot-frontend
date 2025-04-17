@@ -329,6 +329,43 @@ const loadChat = (sessionId) => {
   setIsHistoryLoad(true);
   setMessages(formatted);
 };
+  
+  const handleDeleteSession = async (sessionId) => {
+  if (!window.confirm("Are you sure you want to delete this session?")) return;
+
+  try {
+    const token = localStorage.getItem("token");
+    // const response = await fetch(`http://127.0.0.1:8000/api/delete-session/${sessionId}/`, {
+    const response = await fetch(`https://chatbot-bysajid-3685.up.railway.app/api/delete-session/${sessionId}/`, {
+      method: "DELETE",
+      headers: {
+        Authorization: `Token ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      const error = await response.json();
+      console.error("❌ Failed to delete session:", error);
+      return;
+    }
+
+    // Remove from local state
+    setChatHistory((prev) => {
+      const updated = { ...prev };
+      delete updated[sessionId];
+      return updated;
+    });
+
+    // Clear chat view if deleted session is active
+    if (selectedSessionId === sessionId) {
+      setSelectedSessionId(null);
+      setMessages([]);
+    }
+
+  } catch (err) {
+    console.error("🚨 Error deleting session:", err);
+  }
+};
 
 
   return (
@@ -401,18 +438,32 @@ const loadChat = (sessionId) => {
 
               return (
                 <li
-                  key={sessionId}
-                  onClick={() => loadChat(sessionId)}
+                 key={sessionId}
                  style={{
-                   cursor: "pointer",
+                   display: "flex",
+                   justifyContent: "space-between",
+                   alignItems: "center",
+                    cursor: "pointer",
                    padding: "8px 12px",
-                   marginBottom: "4px",
-                   borderRadius: "4px",
+                    marginBottom: "4px",
+                    borderRadius: "4px",
                    backgroundColor: sessionId === selectedSessionId ? "#0a1f44" : "transparent",
-                   fontWeight: sessionId === selectedSessionId ? "bold" : "normal",
+                    fontWeight: sessionId === selectedSessionId ? "bold" : "normal",
                  }}
-               >
-                  🗂 {firstUserMessage ? `"${firstUserMessage.message.slice(0, 25)}"` : `Session ${index + 1}`}
+                >
+                  <span onClick={() => loadChat(sessionId)} style={{ flex: 1 }}>
+                    🗂 {firstUserMessage ? `"${firstUserMessage.message.slice(0, 25)}"` : `Session ${index + 1}`}
+                  </span>
+                 <span
+                   onClick={(e) => {
+                      e.stopPropagation(); // prevent loading chat on icon click
+                      handleDeleteSession(sessionId);
+                   }}
+                    style={{ color: "red", marginLeft: "10px", cursor: "pointer" }}
+                    title="Delete Session"
+                 >
+                    🗑️
+                  </span>
                 </li>
              );
            })}
