@@ -445,14 +445,14 @@ body {
         width: 330px;
     }
     .chat-container{
-        height: 750px;
+        height: 650px;
     }
 
     .new-chat-btn{
         width: 20%;
     }
 }
-@media (max-width: 800px){
+/* @media (max-width: 800px){
     
     .sidebar-toggle{
         top: 5px;
@@ -464,8 +464,8 @@ body {
         top: 55px;
     }
     
-}
-@media (max-width: 798px){
+} */
+@media (max-width: 800px){
     
     .sidebar-toggle{
         top: 20px;
@@ -474,14 +474,14 @@ body {
         width: 70px;
     }
     .sidebar{
-        top: 80px;
+        top: 93px;
     }
     
 }
 
 
 /* Adjustments for Mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .sidebar {
         width: 300px;
         height: 652px;
@@ -496,19 +496,19 @@ body {
         height: 70px;
     }
     .chat-container{
-        height: 650px;
+        height: 550px;
         width: 600px;
     }
     .new-chat-btn{
         width: 20%;
     }
-}
+} */
 /* Adjustments for Mobile */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .sidebar {
         width: 300px;
         height: 652px;
-        top: 94px;
+        top: 93px;
     }
 
     .sidebar-toggle {
