@@ -86,29 +86,21 @@
     
   }
 }
+
 @media (max-width: 1024px){
   .login-btn{
-    top: 275px;
+    top: 7px;
     
-    right: 120px;
-    font-size: 20px;
-    
-  }
-}
-@media (max-width: 1023px){
-  .login-btn{
-    top: 30px;
-    
-    right: 120px;
+    right: 130px;
     font-size: 20px;
     
   }
 }
 @media (max-width: 947px){
   .login-btn{
-    top: 20px;
+    top: 7px;
     
-    right: 30px;
+    right: 130px;
     font-size: 20px;
     
   }
