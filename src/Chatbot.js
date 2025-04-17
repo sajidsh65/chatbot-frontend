@@ -22,6 +22,7 @@ const Chatbot = () => {
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [selectedSessionId, setSelectedSessionId] = useState(null);
   const [lastSender, setLastSender] = useState(null);
+  const [isHistoryLoad, setIsHistoryLoad] = useState(false);
   const sidebarRef = useRef(null);
   const toggleBtnRef = useRef(null);
 
@@ -32,12 +33,16 @@ const Chatbot = () => {
     const box = chatBoxRef.current;
     if (!box || messages.length === 0) return;
   
+    if (isHistoryLoad) {
+      box.scrollTop = box.scrollHeight; // ✅ Scroll to bottom on history load
+      setIsHistoryLoad(false); // 👈 Reset so it doesn't scroll every time
+      return;
+    }
+  
     if (lastSender === "user") {
-      // 🔽 If user sent a message → scroll to bottom
-      box.scrollTop = box.scrollHeight;
+      box.scrollTop = box.scrollHeight; // Scroll fully for new user message
     } else if (lastSender === "bot") {
-      // 👀 If bot responded → scroll just enough to show start of new message
-      const scrollOffset = 150; // tweak this value
+      const scrollOffset = 150; // Scroll a little for bot message
       box.scrollTop = box.scrollTop + scrollOffset;
     }
   }, [messages]);
@@ -321,6 +326,7 @@ const loadChat = (sessionId) => {
     sender: msg.sender
   }));
 
+  setIsHistoryLoad(true);
   setMessages(formatted);
 };
 
