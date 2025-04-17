@@ -368,35 +368,16 @@ body {
     }
     
 }   
+
 @media (max-width: 853px) {
     .chat-container{
-        height: 900px;
-        
-    }
-    .sidebar {
-        width: 400px;
-        height: 900px;
-        top: 220px;
-    }
-
-    .sidebar-toggle {
-        display: block;
-        top: 140px;
-    }
-    .new-chat-btn{
-        width: 20%;
-        height: 50px;
-    }
-}
-@media (max-width: 852px) {
-    .chat-container{
-        height: 700px;
+        height: 650px;
         
     }
     .sidebar {
         width: 400px;
         height: 700px;
-        top: 105px;
+        top: 94px;
     }
 
     .sidebar-toggle {
