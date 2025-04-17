@@ -21,15 +21,24 @@ const Chatbot = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("token"));
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [selectedSessionId, setSelectedSessionId] = useState(null);
+  const [lastSender, setLastSender] = useState(null);
   const sidebarRef = useRef(null);
   const toggleBtnRef = useRef(null);
 
   const chatBoxRef = useRef(null);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (chatBoxRef.current) {
-      chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
+ useEffect(() => {
+    const box = chatBoxRef.current;
+    if (!box || messages.length === 0) return;
+  
+    if (lastSender === "user") {
+      // 🔽 If user sent a message → scroll to bottom
+      box.scrollTop = box.scrollHeight;
+    } else if (lastSender === "bot") {
+      // 👀 If bot responded → scroll just enough to show start of new message
+      const scrollOffset = 150; // tweak this value
+      box.scrollTop = box.scrollTop + scrollOffset;
     }
   }, [messages]);
 
@@ -198,6 +207,7 @@ async function startNewChat() {
     if (!input.trim()) return;
 
     const newMessage = { text: input, sender: "user" };
+    setLastSender("user");
     setMessages((prev) =>
       Array.isArray(prev) ? [...prev, newMessage] : [newMessage]
     );
@@ -262,6 +272,7 @@ async function startNewChat() {
         setTyping(false);
         const botMessage = { text: data.response, sender: "bot" };
         setMessages((prev) => Array.isArray(prev) ? [...prev, botMessage] : [botMessage]);
+        setLastSender("bot");
 
         if (!isLoggedIn) {
             sessionStorage.setItem("guestChat", JSON.stringify([...messages, newMessage, botMessage]));
