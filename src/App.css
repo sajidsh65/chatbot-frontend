@@ -125,7 +125,7 @@
 }
 @media (max-width: 911px){
   .login-btn{
-    top: 30px;
+    top: 20px;
     
     right: 140px;
     font-size: 20px;
@@ -135,7 +135,7 @@
 }
 @media (max-width: 853px) {
   .login-btn{
-    top: 140px;
+    top: 20px;
     height: 70px;  
     width: 100px;  
     right: 110px;
@@ -144,7 +144,7 @@
 }
 @media (max-width: 852px) {
   .login-btn{
-    top: 30px;
+    top: 20px;
     height: 70px;  
     width: 100px;  
     right: 110px;
