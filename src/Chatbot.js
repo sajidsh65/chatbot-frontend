@@ -460,7 +460,7 @@ const loadChat = (sessionId) => {
                       handleDeleteSession(sessionId);
                    }}
                     style={{ color: "red", marginLeft: "10px", cursor: "pointer" }}
-                    title="Delete Session"
+                    title="Delete Chat"
                  >
                     🗑️
                   </span>
