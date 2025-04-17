@@ -333,17 +333,18 @@ body {
         height: 50px;
     }
 }
+  
 @media (max-width: 912px){
     .sidebar-toggle{
         
-        top: 270px;
+        top: 20px;
         left: 125px;
         height: 70px;
         width: 80px;
     }
     .sidebar{
-        top: 365px;
-        height: 700px;
+        top: 93px;
+        height: 652px;
     }
     .chat-container{
         width: 650px;
@@ -352,19 +353,6 @@ body {
     .new-chat-btn{
         width: 20%;
         height: 50px;
-    }
-}   
-@media (max-width: 911px){
-    .sidebar-toggle{
-        
-        top: 26px;
-        left: 125px;
-        height: 70px;
-        width: 80px;
-    }
-    .sidebar{
-        top: 105px;
-        height: 700px;
     }
     
 }   
