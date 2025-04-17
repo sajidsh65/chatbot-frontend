@@ -1014,13 +1014,13 @@ body {
 @media (max-width: 374px){
     .sidebar-toggle{
         
-        top: 40px;
+        top: 50px;
         left: 30px; 
         height: 50px;
         width: 60px;
     }
     .sidebar{
-        top: 101px;
+        top: 103px;
     }
 
     .new-chat-btn{
@@ -1037,13 +1037,13 @@ body {
 @media (max-width: 360px){
     .sidebar-toggle{
         
-        top: 40px;
+        top: 50px;
         left: 30px; 
         height: 50px;
         width: 60px;
     }
     .sidebar{
-        top: 101px;
+        top: 103px;
     }
 
     .new-chat-btn{
@@ -1053,13 +1053,13 @@ body {
 @media (max-width: 358px){
     .sidebar-toggle{
         
-        top: 40px;
+        top: 50px;
         left: 30px; 
         height: 50px;
         width: 60px;
     }
     .sidebar{
-        top: 101px;
+        top: 103px;
     }
 
     .new-chat-btn{
@@ -1084,7 +1084,7 @@ body {
 @media (max-width: 344px){
     
     .sidebar-toggle{
-        top: 40px;
+        top: 50px;
         left: 20px;
         height: 40px;
         width: 50px;
@@ -1102,7 +1102,7 @@ body {
 @media (max-width: 343px){
     
     .sidebar-toggle{
-        top: 40px;
+        top: 50px;
         left: 20px;
         height: 50px;
         width: 55px;
