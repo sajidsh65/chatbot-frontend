@@ -281,7 +281,6 @@ body {
         width: 400px;
     }
     .chat-container {
-        /* width: 400px; */
         height: 700px;
         width: 800px;
         left: 420px;       
@@ -293,18 +292,19 @@ body {
     
 }
 
+
 @media (max-width: 1024px){
 
     
     .sidebar-toggle{
         
-        top: 280px;
+        top: 7px;
         left: 115px;
         height: 70px;
         width: 80px;
     }
     .sidebar{
-        top: 363px;
+        top: 80px;
         height: 700px;
         width: 400px;
     }
@@ -312,25 +312,10 @@ body {
         width: 20%;
         height: 50px;
     }
-}
-@media (max-width: 1023px){
-
-    
-    .sidebar-toggle{
-        
-        top: 30px;
-        left: 115px;
-        height: 70px;
-        width: 80px;
-    }
-    .sidebar{
-        top: 105px;
-        height: 700px;
-        width: 400px;
-    }
-    .new-chat-btn{
-        width: 20%;
-        height: 50px;
+    .chat-container {
+        height: 600px;
+        width: 650px;
+/*         left: 420px;        */
     }
 }
   
@@ -338,7 +323,7 @@ body {
     .sidebar-toggle{
         
         top: 7px;
-        left: 125px;
+        left: 130px;
         height: 70px;
         width: 80px;
     }
