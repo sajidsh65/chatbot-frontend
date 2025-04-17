@@ -348,6 +348,7 @@ body {
     }
     .chat-container{
         width: 650px;
+        height: 650px;
         
     }
     .new-chat-btn{
@@ -365,7 +366,7 @@ body {
     .sidebar {
         width: 400px;
         height: 700px;
-        top: 94px;
+        top: 93px;
     }
 
     .sidebar-toggle {
