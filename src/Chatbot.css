@@ -337,13 +337,13 @@ body {
 @media (max-width: 912px){
     .sidebar-toggle{
         
-        top: 20px;
+        top: 7px;
         left: 125px;
         height: 70px;
         width: 80px;
     }
     .sidebar{
-        top: 93px;
+        top: 80px;
         height: 602px;
     }
     .chat-container{
